@@ -1,0 +1,51 @@
+# ============================================================
+# API 配置文件模板
+# ============================================================
+# 复制此文件到项目根目录并重命名为 api_config.yaml
+# 填写你的 API 密钥后即可使用
+#
+# 支持的大模型 API（OpenAI 兼容接口）：
+#   - DeepSeek: https://platform.deepseek.com （推荐，新用户有免费额度）
+#   - 豆包: https://www.volcengine.com/product/doubao
+#   - 通义千问: https://dashscope.aliyun.com
+#   - Moonshot: https://platform.moonshot.cn
+#   - 任何兼容 OpenAI API 格式的服务
+# ============================================================
+
+# ---- LLM 配置 ----
+llm:
+  # 提供商类型
+  provider: "openai-compatible"
+
+  # API 密钥（也可通过环境变量 LLM_API_KEY 设置）
+  api_key: "your-api-key-here"
+
+  # API 基础地址
+  # DeepSeek:
+  base_url: "https://api.deepseek.com/v1"
+  # 豆包:
+  # base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  # 通义千问:
+  # base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+
+  # 模型名称
+  model: "deepseek-chat"
+
+  # 生成参数
+  temperature: 0.3      # 0-2，越低越确定，越高越有创造性
+  max_tokens: 4096      # 单次最大输出 token 数
+
+# ---- 知识点抽取配置 ----
+extraction:
+  max_chunk_size: 8000  # 每次 LLM 调用的最大文本字符数
+  overlap_size: 500     # 分块之间的重叠字符数（防止边界遗漏）
+
+# ---- 知识图谱配置 ----
+graph:
+  max_nodes_per_graph: 200  # 单次 LLM 调用处理的最大节点数
+
+# ---- 输出配置 ----
+output:
+  format: "json"        # 输出格式
+  indent: 2             # JSON 缩进空格数
+  pretty_print: true    # 是否美化输出

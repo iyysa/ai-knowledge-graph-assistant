@@ -1,0 +1,90 @@
+测试时间: 2026-07-16 08:59:34.282974
+测试结果: 54通过, 0失败
+
+[PASS] 从文件抽取知识点
+  详情: 抽取到 12 个知识点
+[PASS] 抽取结果包含主题概括
+  详情: Python数据结构与算法复杂度基础知识的综合讲解
+[PASS] 元数据包含分块信息
+[PASS] 知识点包含name字段
+  详情: 变量
+[PASS] 知识点包含definition字段
+  详情: 变量是存储数据的命名容器，Python中变量不需要声明类型，属于动态类型
+[PASS] 知识点包含category字段
+  详情: 编程/Python基础
+[PASS] 知识点包含difficulty字段
+  详情: basic
+[PASS] 知识点包含keywords字段
+  详情: ['变量', '动态类型', '赋值', '数据类型']
+[PASS] 多文件批量抽取
+  详情: 共抽取 12 个知识点
+[PASS] 批量抽取文件计数正确
+[PASS] 图谱节点数等于知识点数
+  详情: 节点: 12
+[PASS] 知识图谱包含关系边
+  详情: 边数: 12
+[PASS] 统计信息包含关系分布
+  详情: {'prerequisite': 6, 'contrast': 2, 'related': 4}
+[PASS] Mermaid代码包含正确的图表类型声明
+[PASS] Mermaid代码长度合理
+  详情: 长度: 496 字符
+[PASS] 知识图谱可视化图片已生成
+  详情: 路径: C:\Users\35184\Desktop\最后作业\ai-knowledge-graph-assistant\tests\test_graph.png
+[PASS] 问题生成成功
+  详情: 生成 10 道题
+[PASS] 元数据包含题目总数
+[PASS] 包含多种题型
+  详情: {'single': 2, 'chain': 3, 'compare': 3, 'apply': 2}
+[PASS] 题目包含id字段
+  详情: q001
+[PASS] 题目包含type字段
+  详情: single
+[PASS] 题目包含question字段
+  详情: 解释列表（List）的三个核心特性，并分别给出代码示例。
+[PASS] 题目包含concepts_involved字段
+  详情: ['列表（List）']
+[PASS] 题目包含difficulty字段
+  详情: easy
+[PASS] 题目包含answer_hint字段
+  详情: 从有序性、可变性、索引访问三个方面回答
+[PASS] 练习卷题目数正确
+  详情: 题目: 10, 期望: 10
+[PASS] 难度筛选功能正常
+  详情: 全部为easy: True
+[PASS] 零基础推荐学习路径
+  详情: 共 12 步
+[PASS] 包含总体计划
+  详情: 先建立时序复杂度的理论基础，再按'基础类型→序列类型→哈希类型→排序算法→编程范式'的顺序递进学习
+[PASS] 部分掌握推荐学习路径
+  详情: 共 10 步
+[PASS] 已掌握的'变量'不在推荐路径中
+[PASS] 目标导向推荐路径
+  详情: 到达'字典'需要 12 步
+[PASS] 路径中包含目标概念'字典'
+  详情: 路径包含的概念: ['变量', '时间复杂度', '列表（List）', '哈希表', '字典（Dictionary）', '集合（Set）', '元组（Tuple）', '字符串', '排序算法', '空间复杂度', '递归', '迭代']
+[PASS] 学习步骤包含step字段
+  详情: 1
+[PASS] 学习步骤包含concept_name字段
+  详情: 变量
+[PASS] 学习步骤包含reason字段
+  详情: 所有编程概念的入口，必须先理解数据的存储模型
+[PASS] 学习步骤包含estimated_time字段
+  详情: 20min
+[PASS] 学习步骤包含study_tips字段
+  详情: 重点理解Python动态类型的含义和基本数据类型
+[PASS] CLI模块可正常导入
+[PASS] CLI模块包含main入口函数
+[PASS] CLI包含cmd_extract处理函数
+[PASS] CLI包含cmd_build_graph处理函数
+[PASS] CLI包含cmd_generate_questions处理函数
+[PASS] CLI包含cmd_recommend_path处理函数
+[PASS] CLI包含cmd_full_pipeline处理函数
+[PASS] API流水线-知识点抽取成功
+[PASS] API流水线-图谱构建成功
+[PASS] API流水线-问题生成成功
+[PASS] API流水线-路径推荐成功
+[PASS] 空文本抽取不崩溃
+[PASS] 长文本正确分块: 21个块
+[PASS] 每个分块大小合理（最大1852字符）
+[PASS] 空概念列表正确抛出ValueError
+[PASS] 全部掌握时路径为空
